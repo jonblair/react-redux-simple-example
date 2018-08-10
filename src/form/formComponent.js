@@ -7,7 +7,7 @@ const FormComponent = props => (
         props.submitAction();
         alert(props.text);
     }}>
-        <h2>React-Redux</h2>
+        <h2>With Redux-Lazy</h2>
         <div>
             <textarea className="textarea" placeholder="Open the developer console and enter some text" cols="100" rows="10"
                 onChange={event => props.textAction({ text: event.target.value })}
