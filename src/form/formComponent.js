@@ -1,4 +1,5 @@
 import React from 'react';
+import './formComponent.css';
 
 const FormComponent = props => (
     <form onSubmit={(event) => {
@@ -6,9 +7,9 @@ const FormComponent = props => (
         props.submitAction();
         alert(props.text);
     }}>
-        <h1>Our form example</h1>
+        <h2>React-Redux</h2>
         <div>
-            <textarea
+            <textarea className="textarea" placeholder="Open the developer console and enter some text" cols="100" rows="10"
                 onChange={event => props.textAction({ text: event.target.value })}
                 value={props.text}
             />
